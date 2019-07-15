@@ -6,7 +6,8 @@
 (defvar required-packages (list 'slime
 				'smartparens
 				'auto-complete
-				'elpy))
+				'elpy
+			        'cyberpunk-theme))
 
 (defun packages-installed-p ()
   (loop for package in required-packages
@@ -20,8 +21,7 @@
     (unless (package-installed-p package)
       (package-install package))))
 
+(require 'load-directory)
 (when (packages-installed-p)
-  (load "~/.emacs.d/elpa-packages-config/smartparens.el")
-  (load "~/.emacs.d/elpa-packages-config/slime.el")
-  (load "~/.emacs.d/elpa-packages-config/auto-complete.el")
-  (load "~/.emacs.d/elpa-packages-config/elpy.el"))
+  (load-directory "~/.emacs.d/elpa-packages-config")
+  (load "~/.emacs.d/theme.el"))
