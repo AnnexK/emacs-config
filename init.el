@@ -5,7 +5,7 @@
 (if (> emacs-major-version 20)
     (tool-bar-mode -1))
 
-(load "~/.emacs.d/aux/load-directory.el")
+(load "~/.emacs.d/misc/load-directory.el")
 
 (defvar *theme* 'cyberpunk)
 
