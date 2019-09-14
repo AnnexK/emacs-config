@@ -7,7 +7,9 @@
 				'smartparens
 			        'company			     
 				'elpy
-			        'cyberpunk-theme))
+			        'cyberpunk-theme
+				'dracula-theme
+				'markdown-mode))
 
 (defun packages-installed-p (package-list)
   (loop for package in package-list
