@@ -3,3 +3,7 @@ elpa
 # emacs autosaves
 *~
 \#*#
+# custom
+custom.el
+# forge db
+forge-database.sqlite
