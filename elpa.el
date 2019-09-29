@@ -11,7 +11,8 @@
 				'dracula-theme
 				'markdown-mode
 				'exec-path-from-shell
-				'magit))
+				'magit
+				'forge))
 
 (defun packages-installed-p (package-list)
   (loop for package in package-list
