@@ -9,7 +9,9 @@
 				'elpy
 			        'cyberpunk-theme
 				'dracula-theme
-				'markdown-mode))
+				'markdown-mode
+				'exec-path-from-shell
+				'magit))
 
 (defun packages-installed-p (package-list)
   (loop for package in package-list
