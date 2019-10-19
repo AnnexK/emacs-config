@@ -8,7 +8,9 @@
 (if (> emacs-major-version 20)
     (tool-bar-mode -1))
 
-(load "~/.emacs.d/misc/load-directory.el")
+(add-to-list 'load-path "~/.emacs.d/misc")
+(load-library "load-directory")
+(require 'load-directory)
 
 (defvar *theme* 'dracula)
 
