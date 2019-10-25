@@ -1,6 +1,6 @@
 (require 'package)
 (add-to-list 'package-archives
-	     '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+	     '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
 (defvar required-packages (list 'slime
@@ -12,7 +12,8 @@
 				'markdown-mode
 				'exec-path-from-shell
 				'magit
-				'forge))
+				'forge
+				'django-mode))
 
 (defun packages-installed-p (package-list)
   (loop for package in package-list
