@@ -19,3 +19,4 @@
 (exec-path-from-shell-initialize)
 
 (load-directory "~/.emacs.d/languages/")
+(put 'dired-find-alternate-file 'disabled nil)
