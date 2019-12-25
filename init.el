@@ -20,3 +20,9 @@
 
 (load-directory "~/.emacs.d/languages/")
 (put 'dired-find-alternate-file 'disabled nil)
+
+(setq column-number-mode t)
+(add-to-list 'default-frame-alist
+	     '(font . "Iosevka Term-12"))
+
+(show-smartparens-global-mode 1)
