@@ -26,3 +26,5 @@
 	     '(font . "Iosevka Term-12"))
 
 (show-smartparens-global-mode 1)
+(load "~/.emacs.d/scons.el")
+
