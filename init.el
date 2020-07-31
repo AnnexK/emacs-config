@@ -23,7 +23,7 @@
 
 (setq column-number-mode t)
 (add-to-list 'default-frame-alist
-	     '(font . "Iosevka Term-12"))
+	     '(font . "Source Code Pro-14"))
 
 (show-smartparens-global-mode 1)
 (load "~/.emacs.d/scons.el")
