@@ -7,3 +7,5 @@ elpa
 custom.el
 # forge db
 forge-database.sqlite
+# some other dirs
+transient
