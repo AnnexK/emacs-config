@@ -25,6 +25,6 @@
 (add-to-list 'default-frame-alist
 	     '(font . "Source Code Pro-14"))
 
+(mode-line-bell-mode)
 (show-smartparens-global-mode 1)
 (load "~/.emacs.d/scons.el")
-

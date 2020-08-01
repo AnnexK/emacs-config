@@ -13,7 +13,8 @@
 				'exec-path-from-shell
 				'magit
 				'forge
-				'django-mode))
+				'django-mode
+				'mode-line-bell))
 
 (defun packages-installed-p (package-list)
   (loop for package in package-list
