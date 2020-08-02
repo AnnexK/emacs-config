@@ -14,7 +14,8 @@
 				'magit
 				'forge
 				'django-mode
-				'mode-line-bell))
+				'mode-line-bell
+				'color-theme-modern))
 
 (defun packages-installed-p (package-list)
   (loop for package in package-list
