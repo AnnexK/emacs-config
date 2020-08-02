@@ -9,3 +9,4 @@ custom.el
 forge-database.sqlite
 # some other dirs
 transient
+/elpy/
