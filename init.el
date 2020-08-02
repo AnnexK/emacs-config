@@ -12,7 +12,7 @@
 (load-library "load-directory")
 (require 'load-directory)
 
-(defvar *theme* 'jsc-dark)
+(defvar *theme* 'clarity)
 
 (load "~/.emacs.d/elpa.el")
 
