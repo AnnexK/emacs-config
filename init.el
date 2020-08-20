@@ -1,6 +1,3 @@
-(require 'cl)
-(setq-default inferior-lisp-program "sbcl")
-
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 

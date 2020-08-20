@@ -18,10 +18,8 @@
 				'color-theme-modern))
 
 (defun packages-installed-p (package-list)
-  (loop for package in package-list
-	unless (package-installed-p package)
-	do (return nil)
-	finally (return t)))
+  (let ((& (lambda (x y) (and x y))))
+    (seq-reduce & (mapcar #'package-installed-p package-list) t)))
 
 (defun do-install-packages (package-list)
   (unless (packages-installed-p package-list)
