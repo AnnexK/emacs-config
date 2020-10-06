@@ -9,7 +9,7 @@
 (load-library "load-directory")
 (require 'load-directory)
 
-(defvar *theme* 'clarity)
+(defvar *theme* 'arjen)
 
 (load "~/.emacs.d/elpa.el")
 
