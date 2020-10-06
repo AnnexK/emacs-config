@@ -1,6 +1,7 @@
 (require 'package)
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/") t)
+(setq package-enable-at-startup nil)
 (package-initialize)
 
 (defvar required-packages (list 'slime
