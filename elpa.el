@@ -16,7 +16,8 @@
 				'forge
 				'django-mode
 				'mode-line-bell
-				'color-theme-modern))
+				'color-theme-modern
+				'lua-mode))
 
 (defun packages-installed-p (package-list)
   (let ((& (lambda (x y) (and x y))))
