@@ -6,7 +6,6 @@
 (load-library "load-directory")
 (require 'load-directory)
 
-(defvar *theme* 'arjen)
 (load "~/.emacs.d/straight-bootstrap.el")
 
 (load-directory "~/.emacs.d/packages-config")
