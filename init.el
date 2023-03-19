@@ -1,6 +1,3 @@
-(setq custom-file "~/.emacs.d/custom.el")
-(load custom-file)
-
 (display-time)
 (if (> emacs-major-version 20)
     (tool-bar-mode -1))
