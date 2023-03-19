@@ -7,10 +7,11 @@
 (require 'load-directory)
 
 (defvar *theme* 'arjen)
+(load "~/.emacs.d/straight-bootstrap.el")
 
-(load "~/.emacs.d/elpa.el")
+(load-directory "~/.emacs.d/packages-config")
 
-(exec-path-from-shell-initialize)
+(load "~/.emacs.d/theme.el")
 
 (load-directory "~/.emacs.d/languages/")
 (put 'dired-find-alternate-file 'disabled nil)
@@ -19,6 +20,5 @@
 (add-to-list 'default-frame-alist
 	     '(font . "Source Code Pro-14"))
 
-(mode-line-bell-mode)
-(show-smartparens-global-mode 1)
 (load "~/.emacs.d/scons.el")
+(req-package-finish)
