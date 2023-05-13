@@ -8,3 +8,6 @@ transient
 # straight.el
 straight/*
 !straight/versions
+# projectile
+/projectile-bookmarks.eld
+/projects
