@@ -11,3 +11,4 @@ straight/*
 # projectile
 /projectile-bookmarks.eld
 /projects
+/eshell/*
