@@ -1,3 +1,4 @@
+(load "~/.emacs.d/system.el")
 (display-time)
 (if (> emacs-major-version 20)
     (tool-bar-mode -1))
