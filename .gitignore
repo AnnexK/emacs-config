@@ -12,3 +12,4 @@ straight/*
 /projectile-bookmarks.eld
 /projects
 /eshell/*
+/.lsp-session-*
