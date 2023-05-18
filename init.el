@@ -13,8 +13,9 @@
 (load "~/.emacs.d/straight-bootstrap.el")
 
 (load-directory "~/.emacs.d/packages-config")
-
 (load "~/.emacs.d/theme.el")
+
+(req-package-finish)
 
 (load-directory "~/.emacs.d/languages/")
 (put 'dired-find-alternate-file 'disabled nil)
@@ -24,4 +25,4 @@
 	     '(font . "Source Code Pro-14"))
 
 (load "~/.emacs.d/scons.el")
-(req-package-finish)
+
