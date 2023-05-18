@@ -1,3 +1,4 @@
+(require 'req-package)
 (req-package projectile
   :init
   (projectile-mode +1)
