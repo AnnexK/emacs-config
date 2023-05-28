@@ -6,11 +6,10 @@
 ;;; Code:
 (require 'projectile)
 (require 'pyvenv)
+(require 'flycheck)
 
-(setq lsp-pylsp-configuration-sources ["pylsp-mypy"])
-(setq lsp-pylsp-plugins-black-enabled t)
-(setq lsp-pylsp-plugins-pylint-enabled t)
-
+(setq-default flycheck-disabled-checkers
+	      (cons 'python-pycompile (default-value flycheck-disabled-checkers)))
 
 (defun projectile-activate-venv-on-project-switch ()
   (let* ((project-root (projectile-project-root))
