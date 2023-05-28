@@ -18,6 +18,11 @@
 (req-package-finish)
 
 (load-directory "~/.emacs.d/languages/")
+
+(let ((locals-directory "~/.emacs.d/local-settings"))
+  (if (file-directory-p locals-directory)
+      (load-directory locals-directory)))
+
 (put 'dired-find-alternate-file 'disabled nil)
 
 (setq column-number-mode t)
@@ -25,4 +30,3 @@
 	     '(font . "Source Code Pro-14"))
 
 (load "~/.emacs.d/scons.el")
-
