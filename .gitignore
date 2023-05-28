@@ -16,3 +16,6 @@ straight/*
 
 # local settings
 local-settings/**
+
+# elpy
+elpy/**
