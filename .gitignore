@@ -13,3 +13,6 @@ straight/*
 /projects
 /eshell/*
 /.lsp-session-*
+
+# local settings
+local-settings/**
