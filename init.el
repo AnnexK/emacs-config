@@ -11,9 +11,9 @@
 (require 'load-directory)
 
 (load "~/.emacs.d/straight-bootstrap.el")
+(load "~/.emacs.d/theme-loader.el")
 
 (load-directory "~/.emacs.d/packages-config")
-(load "~/.emacs.d/theme.el")
 
 (req-package-finish)
 
