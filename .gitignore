@@ -1,6 +1,8 @@
 # emacs autosaves
 *~
 \#*#
+# elpa stuff?
+elpa/
 # forge db
 forge-database.sqlite
 # some other dirs
