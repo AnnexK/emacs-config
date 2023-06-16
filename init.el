@@ -1,4 +1,5 @@
 (load "~/.emacs.d/system.el")
+(setq-default tab-width 4)
 (display-time)
 (if (> emacs-major-version 20)
     (tool-bar-mode -1))
