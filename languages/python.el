@@ -41,8 +41,6 @@ See URL `http://pypi.python.org/pypi/ruff'."
   (let* ((project-root (projectile-project-root))
 	 (venv-dir (concat project-root ".venv"))
 	 (is-pyproject (eql (projectile-project-type) 'python-toml)))
-    (message "venv dir=%s root=%s" venv-dir project-root)
-    (message "venv dir exists=%s ## is-toml-project=%s" (file-exists-p venv-dir) is-pyproject)
     (if (and (file-exists-p venv-dir) is-pyproject)
 	(pyvenv-activate venv-dir)
       (pyvenv-deactivate))))
