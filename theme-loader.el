@@ -10,10 +10,10 @@
   "Apply theme.
 If Emacs is run in daemon mode, add a hook that applies THEME to client frame.
 If Emacs is run in server mode, just apply THEME."
-  (if (member theme (custom-available-themes))
+  (if (member theme custom-known-themes)
       (if (daemonp)
-	  (add-hook 'after-make-frame-functions (make-theme-loader theme))
-	(load-theme theme t))
+		  (add-hook 'after-make-frame-functions (make-theme-loader theme))
+		(enable-theme theme))
     (message "Theme %s is not available; skipping apply-theme" theme)))
 
 (defun make-theme-loader (theme)
