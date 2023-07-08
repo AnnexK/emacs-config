@@ -27,7 +27,5 @@
 (put 'dired-find-alternate-file 'disabled nil)
 
 (setq column-number-mode t)
-(add-to-list 'default-frame-alist
-	     '(font . "Source Code Pro-14"))
 
 (load "~/.emacs.d/scons.el")
