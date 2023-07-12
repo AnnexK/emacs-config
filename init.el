@@ -4,9 +4,6 @@
 (if (> emacs-major-version 20)
     (tool-bar-mode -1))
 
-(if (> emacs-major-version 22)
-    (display-battery-mode 1))
-
 (add-to-list 'load-path "~/.emacs.d/misc")
 (load-library "load-directory")
 (require 'load-directory)
