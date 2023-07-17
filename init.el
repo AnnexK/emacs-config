@@ -3,11 +3,10 @@
 (setq display-time-24hr-format t)
 (setq display-time-default-load-average nil)
 (display-time)
-(if (> emacs-major-version 20)
-    (tool-bar-mode -1))
 
 (add-to-list 'load-path "~/.emacs.d/misc")
 (load-library "load-directory")
+(tool-bar-mode -1)
 (require 'load-directory)
 
 (load "~/.emacs.d/straight-bootstrap.el")
