@@ -4,13 +4,14 @@
 (setq display-time-default-load-average nil)
 (display-time)
 
-(add-to-list 'load-path "~/.emacs.d/misc")
-(load-library "load-directory")
 (tool-bar-mode -1)
+
+(add-to-list 'load-path "~/.emacs.d/util")
 (require 'load-directory)
+(require 'theme-loader)
+(require 'custom-file-loader)
 
 (load "~/.emacs.d/straight-bootstrap.el")
-(load "~/.emacs.d/theme-loader.el")
 
 (load-directory "~/.emacs.d/packages-config")
 
