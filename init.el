@@ -1,5 +1,11 @@
+;;; init.el --- Init module
+;;; Commentary:
+;;; This is the entrypoint to this Emacs configuration.
+;;; Code:
+
 (load "~/.emacs.d/system.el")
 (setq-default tab-width 4)
+
 (setq display-time-24hr-format t)
 (setq display-time-default-load-average nil)
 (display-time)
@@ -28,3 +34,5 @@
 (setq column-number-mode t)
 
 (load "~/.emacs.d/scons.el")
+
+;;; init.el ends here
