@@ -1,5 +1,7 @@
 (load "~/.emacs.d/system.el")
 (setq-default tab-width 4)
+(setq display-time-24hr-format t)
+(setq display-time-default-load-average nil)
 (display-time)
 (if (> emacs-major-version 20)
     (tool-bar-mode -1))
