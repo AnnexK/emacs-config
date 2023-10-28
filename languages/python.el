@@ -15,7 +15,9 @@ To override the path to the ruff executable, set
 See URL `http://pypi.python.org/pypi/ruff'."
   
   :command ("ruff"
-            "--format=text"
+			"check"
+			"--output-format"
+			"text"
             (eval (when buffer-file-name
                     (concat "--stdin-filename=" buffer-file-name)))
             "-")
@@ -46,6 +48,8 @@ See URL `http://pypi.python.org/pypi/ruff'."
       (pyvenv-deactivate))))
 
 (add-hook 'projectile-after-switch-project-hook #'projectile-activate-venv-on-project-switch)
+
+(setq-default python-indent-def-block-scale 1)
 
 (provide 'flycheck-ruff)
 (provide 'python)
