@@ -10,7 +10,7 @@
 (setq display-time-default-load-average nil)
 (display-time)
 
-(if (display-graphic-p) (tool-bar-mode -1))
+(if (functionp #'tool-bar-mode) (tool-bar-mode -1))
 
 (add-to-list 'load-path "~/.emacs.d/util")
 (require 'load-directory)
