@@ -21,3 +21,6 @@ local-settings/**
 
 # elpy
 elpy/**
+
+# some kind of cache?
+.cache
