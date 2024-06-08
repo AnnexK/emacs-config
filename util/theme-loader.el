@@ -23,4 +23,3 @@ If Emacs is run in server mode, just apply THEME."
 
 (provide 'theme-loader)
 ;;; theme-loader.el ends here
-
