@@ -4,7 +4,7 @@
 # elpa stuff?
 elpa/
 # forge db
-forge-database.sqlite
+forge-database*.sqlite
 # some other dirs
 transient
 # straight.el
@@ -24,3 +24,12 @@ elpy/**
 
 # some kind of cache?
 .cache
+
+# DAP breakpoints cache
+.dap-breakpoints
+
+# projectile cache
+projectile.cache
+
+# elisp native cache
+eln-cache
