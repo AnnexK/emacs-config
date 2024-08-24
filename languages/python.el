@@ -10,6 +10,8 @@
 
 (setq lsp-pylsp-configuration-sources ["pylsp-mypy"])
 (setq lsp-pylsp-plugins-black-enabled t)
+(setq lsp-pylsp-plugins-mypy-enabled t)
+(setq lsp-pylsp-plugins-ruff-enabled t)
 
 (flycheck-define-checker python-ruff
   "A Python syntax and style checker using the ruff utility.
