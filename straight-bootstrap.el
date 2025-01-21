@@ -15,5 +15,5 @@
 (straight-use-package 'req-package)
 
 (use-package straight
-	     :custom
-	     (straight-use-package-by-default t))
+  :custom
+  (straight-use-package-by-default t))
