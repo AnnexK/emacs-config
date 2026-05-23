@@ -1,5 +1,5 @@
+;;; ace-window.el -- Config for ace-window
 (require 'req-package)
-
 
 (req-package ace-window
   :bind ("M-o" . ace-window)
