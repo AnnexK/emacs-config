@@ -35,4 +35,22 @@
 
 (load "~/.emacs.d/scons.el")
 
+;; Startup buffer
+(defconst *startup-buffer-image-path* (file-name-concat user-emacs-directory "assets" "startup-image.jpg"))
+(defun my/startup-buffer ()
+  (let* ((buffer (get-buffer-create (format "*Hello %s*" (user-real-login-name))))
+		 (image (create-image *startup-buffer-image-path*))
+		 (image-width (car (image-size image t)))
+		 (window-width (window-pixel-width))
+		 (image-height (cdr (image-size image t)))
+		 (window-height (window-pixel-height))
+		 (image-width-offset (/ (- window-width image-width) 2))
+		 (image-height-offset (/ (- window-height image-height) 2)))
+	(set-buffer buffer)
+	(local-set-key (kbd "q") 'quit-window)
+	(insert-image image)
+	buffer))
+
+(setq initial-buffer-choice #'my/startup-buffer)
+
 ;;; init.el ends here
