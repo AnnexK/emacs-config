@@ -5,7 +5,7 @@
 elpa/
 # forge db
 forge-database*.sqlite
-# some other dirs
+# transient stuff
 transient
 # straight.el
 straight/*
@@ -13,11 +13,15 @@ straight/*
 # projectile
 /projectile-bookmarks.eld
 /projects
+
+# eshell history
 /eshell/*
+
+# LSP stuff
 /.lsp-session-*
 
-# local settings
-local-settings/**
+# custom
+custom.el
 
 # elpy
 elpy/**
